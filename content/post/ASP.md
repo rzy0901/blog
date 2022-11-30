@@ -153,7 +153,7 @@ $$
   $$
   \mathbb{P}(\lim\limits_{n \to \infty}\sup E_n)=\mathbb{P}(\text{an infinite number of }E_i \text{ occur})=1.
   $$
-  Proof. For any $n<m<\infty$, since $1-x<e^{-x}$,
+  Proof. For any $n\lt m\lt \infty$, since $1-x\lt e^{-x}$,
   $$
   \begin{align}
   &\mathbb{P}(\left(\cup_{i=n}^{m}E_i\right)^c)=\mathbb{P}(\cap_{i=n}^{m}E_i^c)=\prod_{i=n}^m \mathbb{P} (E_i^c) \text{ (By independence)} \newline
@@ -204,8 +204,8 @@ $$
 
 Properties of distribution function:
 
-+ Right-continous; Non-decreasing ($\lim_\limits{x\to+\infty}F(x)=1,\lim_\limits{x\to-\infty}F(x)=0$);
-+ If $X$ is discrete random varibale, $F(x)=\sum_{z\leq x}\mathbb{P}(x)$. If $X$ takes uncountably many values, summation makes NO sense.
++ Right-continuous; Non-decreasing ($\lim_\limits{x\to+\infty}F(x)=1,\lim_\limits{x\to-\infty}F(x)=0$);
++ If $X$ is discrete random variable, $F(x)=\sum_{z\leq x}\mathbb{P}(x)$. If $X$ takes uncountably many values, summation makes NO sense.
 
 ***
 
@@ -290,14 +290,14 @@ $$
 
 # 关于本博客撰写的一些统一规范
 
-关于Mathjex结合markdown使用Latex的bug记录:
+关于Mathjax结合markdown使用Latex的bug记录:
 
 ```html
 一、集合\{\}的转义问题: 使用结合goldmark-mathjax的hugo解决（该PR没有被hugo合并）。https://github.com/xjzsq/hugo
 二、公式换行：必须使用\begin{aligned} \newline \end{aligned}或\begin{align} \newline \end{align}
 ```
 
-Adomonition文本框，撰写规范: 
+Admonition文本框，撰写规范: 
 
 ```html
 一、Definition 使用 \{\{% admonition tip "Definition XXX" %\}\} \{\{% /admonition %\}\}
